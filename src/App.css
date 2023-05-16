@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body {
+    padding: 20px;
+    background-image: linear-gradient(45deg, #f8b8fb 0%, #6fdaf7 52%, #7af0a1 90%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerText{
+    width: 250px;
+    background-color: rgba(240, 248, 255, 0.773);
+    border-radius: 10px;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Expense{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center
+    
 }
+.bal{
+    background: #8c6bf7dc;
+    width: 110px;
+    height: 20px;
+    font-weight: 800;
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.inc{
+    background: #10f918;
+    width: 110px;
+    height: 20px;
+    font-weight: 800;
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
 
-.App-link {
-  color: #61dafb;
 }
+.exp{
+    background: #f82020b5;
+    width: 110px;
+    height: 20px;
+    font-weight: 800;
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+form input{
+    margin: 5px;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    background: #ffffff45;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
+    
+}
+form button{
+    margin: 10px;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
+
+}
+.inBtn{
+    background: #11fb09;
+}
+.exBtn{
+    background: #fa0a0a;
+}
+.transList{
+    padding: 20px;
+    background: #fcf9f981;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
+
+
+}
+.income{
+    background: #0eec426e;
+    list-style-type: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
+
+    
+}
+.expense{
+    background-color: #ec1d0e59;
+    list-style-type: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
+
+}
+ul li button{
+    border: none;
+    float: right;
+    background: none;
+    /* position: relative; left:20px; top:0px; */
 }
