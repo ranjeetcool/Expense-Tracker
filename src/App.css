@@ -8,7 +8,7 @@ body {
     text-align: center;
 }
 .headerText{
-    width: 250px;
+    /* width: 250px; */
     background-color: rgba(240, 248, 255, 0.773);
     border-radius: 10px;
     
@@ -16,9 +16,10 @@ body {
 .Expense{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-content: center
+    align-content: center;
+    gap: 10px;
     
 }
 .bal{
@@ -51,14 +52,19 @@ body {
     box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
 
 }
-form input{
+form input, .search{
     margin: 5px;
     border-radius: 10px;
     height: 30px;
     border: none;
     background: #ffffff45;
     box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
+    text-align: center;
+    outline: none;
     
+}
+form input:hover, .search:hover{
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 }
 form button{
     margin: 10px;
@@ -67,7 +73,9 @@ form button{
     border-radius: 5px;
     border: none;
     box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
-
+}
+form button:hover{
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 }
 .inBtn{
     background: #11fb09;
@@ -76,33 +84,37 @@ form button{
     background: #fa0a0a;
 }
 .transList{
+    width: 100%;
     padding: 20px;
+    margin-bottom: 20px;
     background: #fcf9f981;
     border-radius: 20px;
     box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
-
-
 }
 .income{
     background: #0eec426e;
-    list-style-type: none;
     margin-bottom: 5px;
     border-radius: 5px;
-    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
-
-    
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0); 
+}
+.income:hover{
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 }
 .expense{
     background-color: #ec1d0e59;
-    list-style-type: none;
     margin-bottom: 5px;
     border-radius: 5px;
     box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
-
 }
-ul li button{
+.expense:hover{
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+/* ul li button{
     border: none;
     float: right;
     background: none;
-    /* position: relative; left:20px; top:0px; */
+} */
+table td button{
+    border: none;
+    background: none;
 }
