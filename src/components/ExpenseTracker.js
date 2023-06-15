@@ -4,7 +4,7 @@ import TransactionHistory from './TransactionHistory'
 import AddTransaction from './AddTransaction'
 
 function ExpenseTracker() {
-    const transactionData = [{ id: 1, name: 'Salary', amount: 3000, trtype: 'income' }, { id: 2, name: 'Grocery', amount: 100, trtype: 'expense' }, { id: 3, name: 'Mobile', amount: 500, trtype: 'expense' }]
+    const transactionData = [{ id: 1, name: 'Salary', amount: 3000, trtype: 'income' }, { id: 2, name: 'Grocery', amount: 100, trtype: 'expense' }, { id: 3, name: 'Mobile', amount: 500, trtype: 'expense' }, { id: 4, name: 'Bonus', amount: 1000, trtype: 'income' }, { id: 5, name: 'Watch', amount: 2000, trtype: 'expense' }]
     const [transaction, setTransaction] = useState(transactionData)
 
     const [income, setIncome] = useState(0)
